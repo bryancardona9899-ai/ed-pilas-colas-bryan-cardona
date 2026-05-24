@@ -1,3 +1,4 @@
+# 1. Operacion enqueue(dato)
 ALGORITMO enqueue(dato)
     SI colaEstaLlena() ENTONCES
         ESCRIBIR "Error: La cola se encuentra llena (QUEUE Overflow)"
@@ -13,6 +14,7 @@ ALGORITMO enqueue(dato)
     RETORNAR VERDADERO
 FIN ALGORITMO
 
+# 2. Operacion dequeue()
 ALGORITMO dequeue()
     SI estaVacia() ENTONCES
         ESCRIBIR "Error: No hay datos en la cola (Queue Underflow)"
@@ -31,7 +33,7 @@ ALGORITMO dequeue()
     RETORNAR elemento
 FIN ALGORITMO
 
-
+# 3. Operacion peek ()
 ALGORITMO peek()
     SI estaVacia() ENTONCES
         ESCRIBIR "La cola esta vacia"
@@ -41,7 +43,7 @@ ALGORITMO peek()
     RETORNAR arreglo[Cabeza]
 FIN ALGORITMO
 
-
+# 4. Operacion estaVacia ()
 ALGORITMO estaVacia() 
     SI cabeza == -1 ENTONCES
         RETORNAR VERDADERO
